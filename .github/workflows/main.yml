@@ -34,6 +34,6 @@ jobs:
     # Automated unit testing of your python code under a given test case
     - name: Unit Testing With Python
       uses: PrajjawalBanati/Python-actions@0.0.1
-      with:
+      # with:
         # Always push your code and test case file as name.py and test_name.py
-        src: ./tests
+        # src: ./tests
