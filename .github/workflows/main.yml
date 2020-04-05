@@ -32,8 +32,6 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     # Automated unit testing of your python code under a given test case
-    - name: Unit Testing With Python
-      uses: PrajjawalBanati/Python-actions@0.0.1
-      # with:
-        # Always push your code and test case file as name.py and test_name.py
-        # src: ./tests
+    - name: Run python unit test
+      run: |
+        python -m unittest discover -s ./tests -p '*test*.py'
